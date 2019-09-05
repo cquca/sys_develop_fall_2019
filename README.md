@@ -42,7 +42,7 @@ sudo make install
 
 ### kernel
 Kernel 使用汇编语言编写，使用到的指令有20余条，有三个版本。首先需要对Kernel的汇编代码进行汇编。
-1. 下载MTI BARE Metal 编译器，将bin文件夹添加到系统的PATH中。make的时候才有对应的编译器。
+1. 下载[MTI BARE Metal](https://cloud.tsinghua.edu.cn/f/16dde018b00749a4a4de/) 编译器，将bin文件夹添加到系统的PATH中。make的时候才有对应的编译器。
 2. 在kernel下面，终端使用命令
 ```make ON_FPGA=n```
 即可开始编译，将生成`kernel.elf`和 ```kernel.bin``` 文件.（如果出现一系列的mips环境错误，说明第一步的bin环境没有配置成功）
